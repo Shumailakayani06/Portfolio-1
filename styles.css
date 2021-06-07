@@ -1,0 +1,391 @@
+/* #2f3640;   #c7dcf1*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat";
+  background: white;
+}
+
+p {
+  max-width: 600px;
+}
+
+/* Navigation Bar */
+
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #012340;
+  /* #0e2b50; */
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  z-index: 2;
+}
+.nav-link li {
+  list-style: none;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 23px;
+}
+
+.nav-link a:hover {
+  transform: scale(1.1);
+  color: rgb(245, 61, 98);
+}
+
+.actiiv a {
+  color: rgb(245, 61, 98);
+  font-size: 16px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-link {
+    width: 60%;
+  }
+
+  .nav-link a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-link {
+    position: absolute;
+    right: 0px;
+    height: 70vh;
+    top: 11vh;
+    background-color: #1b4b7c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translatex(100%);
+    transition: transform 0.5s ease-in;
+    display: none;
+    opacity: 85%;
+  }
+
+  .nav-link a {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .nav-link a:hover {
+    transform: scale(1.1);
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translatex(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translatex(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Front page portfolio picture */
+
+.logoImg {
+  height: 100px;
+  width: 150px;
+}
+
+/* man section content */
+
+.imgDiv {
+  background: url(/images/f00abafe-ebbe-4fa7-b8ab-cde2ada1a51b-removebg-preview.png);
+  width: 30%;
+  max-height: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  margin-left: 20%;
+  background-size: cover;
+}
+
+.sectionDiv {
+  display: flex;
+  background-image: url(/images/Crystal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.sectionDiv .max-width {
+  margin: 10% 0 auto 10px;
+}
+
+.sectionDiv .headInfo .text-1 {
+  font-size: 27px;
+}
+
+.sectionDiv .headInfo .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.sectionDiv .headInfo .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.sectionDiv .headInfo .text-3 span {
+  color: rgb(245, 61, 98);
+  font-weight: 700;
+}
+
+.sectionDiv .headInfo a {
+  display: inline-block;
+  background-color: rgb(245, 61, 98);
+  color: white;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid rgb(245, 61, 98);
+  transition: all 0.3s ease;
+}
+
+.sectionDiv .headInfo a:hover {
+  color: rgb(245, 61, 98);
+  background: none;
+}
+
+/* home page about me section */
+
+.about {
+  padding: 100px 0;
+}
+
+.about .aboutTitle {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  color: black;
+}
+
+.about .aboutTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 250px;
+  height: 3px;
+  background: black;
+  transform: translateX(-50%);
+}
+
+.about .aboutTitle::after {
+  content: "Who i am";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 24px;
+  color: rgb(245, 61, 98);
+  padding: 5px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em;
+}
+
+.about .about-content .left {
+  width: 45%;
+  text-align: center;
+}
+
+.about .about-content .left img {
+  height: 600px;
+  width: 400px;
+  border-radius: 2%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .aboutText {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .aboutText span {
+  color: rgb(245, 61, 98);
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background-color: rgb(245, 61, 98);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid rgb(245, 61, 98);
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: rgb(245, 61, 98);
+  background: none;
+}
+
+@media screen and (max-width: 945px) {
+  .max-width {
+    max-width: 800px;
+  }
+  .about .about-content .column {
+    width: 100%;
+  }
+
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about .about-content .right {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  .imgDiv {
+    width: 35%;
+    height: 50%;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    margin-left: 20%;
+  }
+}
+
+/* my projects */
+
+.myProjects img {
+  width: 400px;
+  height: 250px;
+  padding: 2em;
+}
+
+.myProjects {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1b4b7c;
+}
+
+.ph2 h2 {
+  color: black;
+  font-size: 2.5em;
+  margin: 1em;
+}
+
+.ph2 {
+  background-color: #1b4b7c;
+}
+
+@media screen and (max-width: 767px) {
+  .imgDiv {
+    width: 55%;
+    max-height: 100%;
+    text-align: center;
+
+    margin-left: 20%;
+  }
+
+  .sectionDiv {
+    width: 100%;
+    height: 122vh;
+    min-height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .imgDiv {
+    width: 70%;
+    height: 70%;
+
+    text-align: center;
+
+    margin-left: 20%;
+  }
+
+  .sectionDiv {
+    width: 100%;
+    height: 122vh;
+    min-height: 500px;
+  }
+}
