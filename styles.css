@@ -9,7 +9,7 @@
 
 body {
   font-family: "montserrat";
-  background: white;
+  background: #012340;
 }
 
 p {
@@ -222,7 +222,7 @@ p {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 30px;
-  color: black;
+  color: white;
 }
 
 .about .aboutTitle::before {
@@ -232,7 +232,7 @@ p {
   left: 50%;
   width: 250px;
   height: 3px;
-  background: black;
+  background: white;
   transform: translateX(-50%);
 }
 
@@ -244,7 +244,7 @@ p {
   font-size: 24px;
   color: rgb(245, 61, 98);
   padding: 5px;
-  background: white;
+  background: #012340;
   transform: translateX(-50%);
 }
 
@@ -276,6 +276,12 @@ p {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: white;
+}
+
+.about .about-content .right p {
+  color: white;
+  font-size: 18px;
 }
 
 .about .about-content .right .aboutText span {
@@ -325,7 +331,7 @@ p {
 
 @media screen and (max-width: 1299px) {
   .imgDiv {
-    width: 35%;
+    width: 30%;
     height: 50%;
     text-align: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
@@ -375,8 +381,8 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .imgDiv {
-    width: 70%;
-    height: 70%;
+    width: 40%;
+    height: 50%;
 
     text-align: center;
 
