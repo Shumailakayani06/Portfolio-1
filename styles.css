@@ -18,11 +18,78 @@ p {
   max-width: 600px;
 }
 
+/* spinner */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 1s linear infinite;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #0456c8;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #8004c8;
+  }
+}
+
+.ring:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(14, 12, 12, 0.3);
+}
+
+.loadingS {
+  color: darkslategrey;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 /* Navigation Bar */
 
 .NavBar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
   background-color: #012340;
@@ -50,6 +117,15 @@ p {
 .nav-link a:hover {
   transform: scale(1.1);
   color: rgb(245, 61, 98);
+}
+
+.NavBar .nav-link a i {
+  margin-right: 0.3em;
+}
+
+.NavBar .nav-link a .fab.fa-github,
+.NavBar .nav-link a .fab.fa-linkedin {
+  font-size: 1.3em;
 }
 
 .actiiv a {
@@ -147,6 +223,10 @@ p {
 }
 
 /* man section content */
+
+section .headInfo {
+  margin-left: 1em;
+}
 
 .contact .max-width {
   padding: 0 80px;
@@ -379,6 +459,13 @@ section .aboutTitle::after {
   opacity: 80%;
 }
 
+.project-header {
+  color: rgb(245, 61, 98);
+  letter-spacing: 1px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
 /* Skills section styling */
 
 .skills .aboutTitle::after {
@@ -434,6 +521,121 @@ section .aboutTitle::after {
   width: 50%;
 }
 
+/* Tools section */
+
+section .toolsTitle {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+section .toolsTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 250px;
+  height: 3px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+section .toolsTitle::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 24px;
+  color: rgb(245, 61, 98);
+  padding: 5px;
+  background: #012340;
+  transform: translateX(-50%);
+}
+
+.tools .toolsTitle::after {
+  content: "What i can";
+}
+
+.toolDiv {
+  display: flex;
+  justify-content: space-around;
+  max-width: 65%;
+}
+
+.tools .tools {
+  color: white;
+}
+
+.tools .tools li {
+  list-style: none;
+  padding: 1em;
+  font-size: 18px;
+}
+
+.tools .tools i {
+  color: rgb(245, 61, 98);
+}
+/* last 3 post desction */
+
+.blogPosts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blogPosts a {
+  text-decoration: none;
+  color: rgb(245, 61, 98);
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.blogPosts a h3 {
+  margin-bottom: 1em;
+}
+
+.imgdiv img {
+  width: 400px;
+  height: 280px;
+}
+
+section .blogTitle {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+section .blogTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 250px;
+  height: 3px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+section .blogTitle::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 24px;
+  color: rgb(245, 61, 98);
+  padding: 5px;
+  background: #012340;
+  transform: translateX(-50%);
+}
+.blog .blogTitle::after {
+  content: "Last Posts";
+}
+
 /* Contact orm section */
 
 .contact .aboutTitle::after {
@@ -463,6 +665,11 @@ section .aboutTitle::after {
 
 .contact .contact-content .row .info {
   margin-left: 30px;
+}
+
+.contact .contact-content .row .info a {
+  text-decoration: none;
+  color: lightgray;
 }
 
 .contact .contact-content .row i {
@@ -552,6 +759,14 @@ section .aboutTitle::after {
   padding: 0 15px;
 }
 
+.name input:focus,
+.email input:focus,
+.subject input:focus,
+.textarea textarea:focus {
+  color: white;
+  font-size: 14px;
+}
+
 .contact .right form .contactBtn button {
   display: inline-block;
   background-color: rgb(245, 61, 98);
@@ -563,11 +778,88 @@ section .aboutTitle::after {
   border-radius: 6px;
   border: 2px solid rgb(245, 61, 98);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .contact .right form .contactBtn button:hover {
   color: rgb(245, 61, 98);
   background: none;
+}
+
+/* footer section starts here */
+
+footer {
+  padding: 20px 23px;
+  color: white;
+  margin-top: 3em;
+  font-size: 1.2em;
+}
+
+footer span a {
+  color: rgb(245, 61, 98);
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footerA a,
+.footerA i {
+  margin: 0 1em;
+}
+
+.footerA a {
+  color: white;
+}
+
+.footerA i {
+  font-size: 1.5em;
+}
+
+.footerA a:hover {
+  color: rgb(245, 61, 98);
+}
+
+/* About page content starts here */
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.aboutRow {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 40%;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  padding: 2em;
+  min-width: 370px;
+}
+
+.abouteach {
+  margin-bottom: 1.5em;
+}
+
+.aboutInfo {
+  width: 100%;
+}
+
+.aboutRow .year {
+  margin-bottom: 2.7em;
+}
+
+.abouteach .head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+}
+
+.abouteach .sub-title {
+  color: lightgray;
 }
 
 /* Media Query*/

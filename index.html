@@ -12,14 +12,22 @@
 </head>
 <body>
     
+
+        <!--Loader-->
+        <div class="loader">
+            <div class="ring"></div>
+            <span class="loadingS">Loading...</span>
+        </div>
+
+        <!--header section + NavBar-->
 <header>
 
 <nav class="NavBar">
     <div class="logo"><a href="/index.html"><img src="/images/Logo.png" class="logoImg"></a></div>
          <ul class="nav-link">
-            <li><a href="#"><i class="fas fa-briefcase"></i>Portfolio</a></li>
-            <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+            <li><a href="#i1"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="/about.html"><i class="fas fa-address-card"></i>About</a></li>
+            <li><a href="#i3"><i class="fas fa-envelope"></i>Contact</a></li>
             <li><a href="#"><i class="fab fa-github"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
         </ul>
@@ -90,7 +98,7 @@
 <section class="myProjects">
     
     <div class="max-width">
-        <h2 class="aboutTitle">Portfolio</h2>
+        <h2 class="aboutTitle"><a id="i1">Portfolio</a></h2>
 <div class="project-content">
     <div class="card">
         <div class="box">
@@ -154,12 +162,63 @@
 
  </section>
 
+  <!--my Tools section -->
+
+  <section class="tools">
+    <div class="max-width">
+        <h2 class="toolsTitle">Tools</h2>
+        <div class="toolDiv">
+        <div class="tools left">
+            <ul>
+                <li>
+                    <i class="fas fa-bahai"></i> AdobeXD
+                    <li>
+                        <i class="fas fa-bahai"></i> Figma
+                    </li>
+                    <li>
+                        <i class="fas fa-bahai"></i> Visual Studio Code
+                    </li>
+                    <li>
+                        <i class="fas fa-bahai"></i> Github Desktop
+                    </li>
+                </li>
+            </ul>
+        </div>
+        <div class="tools right">
+            <ul>
+                <li>
+                    <i class="fas fa-bahai"></i> Filezila
+                    <li>
+                        <i class="fas fa-bahai"></i> Postman
+                    </li>
+                    <li>
+                        <i class="fas fa-bahai"></i> Wordpress
+                    </li>
+                    <li>
+                        <i class="fas fa-bahai"></i> Hostinger
+                    </li>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+</section>
+
+
+ <!-- 3 blog post section-->
+ <section class="blog">
+        <h2 class="blogTitle">Blog Posts</h2>
+ <div class="blogPDiv">
+     <div class="blogPosts"></div>
+ </div>
+ </section>
+
 
  <!--Contact form-->
 
  <section class="contact">
      <div class="max-width">
-         <h2 class="aboutTitle">Contact Me</h2>
+         <h2 class="aboutTitle"><a id="i3">Contact Me</a></h2>
          <div class="contact-content">
              <div class="column left">
                  <div class="text">Get in touch</div>
@@ -182,7 +241,7 @@
                         <i class="fas fa-envelope"></i>
                         <div class="info">
                             <div class="head">Email</div>
-                            <div class="sub-title">shumailakayani059@gmail.com</div>
+                            <div class="sub-title"><a href="mailto:loveandgreens@gmail.com">shumailakayani059@gmail.com</a></div>
                         </div>
                     </div>
                  </div>
@@ -211,6 +270,29 @@
          </div>
      </div>
  </section>
+
+ <!--footer section starts here-->
+
+ <footer>
+     <div class="footerDiv">
+
+        
+         <div>
+            <span>Created By <a href="#">Shumaila Kayani</a> | <span class="far fa-copyright"></span>2020 All rights reserved</span>
+         </div>
+          <div class="footerA">
+             <span><a href="#">Portfolio </a></span>
+             <a href="#">About </a>
+        </div>
+        <div class="footerA">
+            <a href="#"><i class="fab fa-github"></i> </a>
+             <a href="#"><i class="fab fa-linkedin"></i> </a>
+        </div>
+     </div>
+     
+ </footer>
+
+
 
 <script src="/js/script.js"></script>
 </body>
