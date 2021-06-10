@@ -464,6 +464,15 @@ section .aboutTitle::after {
   letter-spacing: 1px;
   font-size: 1.3em;
   font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.project-content p {
+  max-width: 370px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 2em 0;
 }
 
 /* Skills section styling */
@@ -636,7 +645,7 @@ section .blogTitle::after {
   content: "Last Posts";
 }
 
-/* Contact orm section */
+/* Contact form section */
 
 .contact .aboutTitle::after {
   content: "Get in touch";
@@ -835,9 +844,10 @@ footer span a {
   justify-content: space-between;
   width: 40%;
   flex-wrap: wrap;
-  border: 2px solid white;
+  border-bottom: 2px solid white;
   padding: 2em;
   min-width: 370px;
+  margin-bottom: 3em;
 }
 
 .abouteach {
@@ -860,6 +870,208 @@ footer span a {
 
 .abouteach .sub-title {
   color: lightgray;
+}
+
+.skillsAbout .abouteach {
+  margin-bottom: 2.5em;
+}
+
+.aboutMe {
+  padding-bottom: 0;
+  margin-top: 2em;
+}
+
+.aboutMe .AboutMeTitle {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.aboutMe .AboutMeTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 250px;
+  height: 3px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+.aboutMe .AboutMeTitle::after {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  font-size: 24px;
+  color: rgb(245, 61, 98);
+  padding: 5px;
+  background: #012340;
+  transform: translateX(-50%);
+}
+.aboutMe .AboutMeTitle::after {
+  content: "CV";
+}
+
+.aboutRow h2 {
+  color: rgb(245, 61, 98);
+  margin-bottom: 2em;
+  letter-spacing: 2px;
+}
+
+.cvDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contactDiv {
+  text-align: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 4em;
+}
+
+.contactDiv h3 {
+  color: rgb(245, 61, 98);
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contactDiv li {
+  list-style: none;
+  padding: 2em;
+  display: flex;
+}
+
+.cvI {
+  display: flex;
+  padding: 2em;
+}
+
+.contactDiv i {
+  font-size: 3em;
+  color: white;
+}
+
+.cvBtn a {
+  color: white;
+}
+.cvBtn a,
+.linkBtn a {
+  display: inline-block;
+  background-color: rgb(245, 61, 98);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid rgb(245, 61, 98);
+  transition: all 0.3s ease;
+}
+
+.cvBtn a:hover,
+.linkBtn a:hover {
+  color: rgb(245, 61, 98);
+  background: none;
+}
+
+/* Project specific page */
+
+.projectSection {
+  margin: 1em;
+}
+.projectImgDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projectImgDiv img {
+  width: 370px;
+  height: 230px;
+  margin: 1em;
+  box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+
+.rainydays .rainydaysTitle,
+.csmuseum .csmuseumTitle,
+.lovegreens .lovegreensTitle {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.rainydays .rainydaysTitle::before,
+.csmuseum .csmuseumTitle::before,
+.lovegreens .lovegreensTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 250px;
+  height: 3px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+.rainydays .rainydaysTitle::after,
+.csmuseum .csmuseumTitle::after,
+.lovegreens .lovegreensTitle::after {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  font-size: 24px;
+  color: rgb(245, 61, 98);
+  padding: 5px;
+  background: #012340;
+  transform: translateX(-50%);
+}
+.rainydays .rainydaysTitle::after {
+  content: "My First Website";
+}
+
+.csmuseum .csmuseumTitle::after {
+  content: "Semester Project";
+}
+
+.lovegreens .lovegreensTitle::after {
+  content: "Project Exam";
+}
+
+/* project content */
+.projectDiv {
+  margin: 1em;
+}
+
+.projectDiv h2 {
+  color: rgb(245, 61, 98);
+  letter-spacing: 2px;
+  margin-bottom: 1.5em;
+}
+
+.projectDiv p {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-bottom: 2em;
+}
+
+/* link BTN */
+
+.linkBtn {
+  margin: 1em;
 }
 
 /* Media Query*/
