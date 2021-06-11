@@ -138,10 +138,10 @@ p {
 }
 
 .burger div {
-  width: 25px;
-  height: 3px;
+  width: 40px;
+  height: 4px;
   background-color: white;
-  margin: 5px;
+  margin: 8px;
   transition: all 0.3s ease;
 }
 
@@ -155,7 +155,7 @@ p {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -186,6 +186,7 @@ p {
   }
   .burger {
     display: block;
+    margin-right: 1em;
   }
 }
 
@@ -205,17 +206,23 @@ p {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-8px, 9px);
 }
 .toggle .line2 {
   opacity: 0;
 }
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-8px, -9px);
 }
 
 .activ a {
   color: rgb(245, 61, 98);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-link {
+    display: flex;
+  }
 }
 
 /* Front page portfolio picture */
@@ -304,6 +311,11 @@ section .headInfo {
 @media screen and (max-width: 768px) {
   .sectionDiv .headInfo .text-2 {
     font-size: 40px;
+  }
+
+  .logoImg {
+    height: 70px;
+    width: 120px;
   }
 }
 /* all similar styling code*/
@@ -419,6 +431,18 @@ section .aboutTitle::after {
   background: none;
 }
 
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 945px) {
   .max-width {
     max-width: 800px;
@@ -526,6 +550,11 @@ section .aboutTitle::after {
   .project-img {
     width: 350px;
     height: 230px;
+  }
+
+  .readmoreBtn {
+    margin-bottom: 4em;
+    margin-top: 1em;
   }
 }
 
@@ -668,7 +697,6 @@ section .toolsTitle::after {
 
   .tools .right li {
     margin-left: 1.2em;
-    padding-right: 2em;
   }
 }
 
@@ -1382,6 +1410,11 @@ footer span a {
     width: 100%;
     height: 122vh;
     min-height: 500px;
+  }
+
+  .sPost h1 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
   }
 }
 
