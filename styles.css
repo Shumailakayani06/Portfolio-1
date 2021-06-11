@@ -15,7 +15,7 @@ body {
 }
 
 p {
-  max-width: 600px;
+  max-width: 900px;
 }
 
 /* spinner */
@@ -215,6 +215,10 @@ p {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.activ a {
+  color: rgb(245, 61, 98);
+}
+
 /* Front page portfolio picture */
 
 .logoImg {
@@ -379,6 +383,10 @@ section .aboutTitle::after {
   font-size: 18px;
 }
 
+.aboutText {
+  padding-bottom: 2em;
+}
+
 .about .about-content .right .aboutText span {
   color: rgb(245, 61, 98);
 }
@@ -398,6 +406,7 @@ section .aboutTitle::after {
   border-radius: 6px;
   border: 2px solid rgb(245, 61, 98);
   transition: all 0.3s ease;
+  margin-top: 2em;
 }
 
 .about .about-content .right a:hover {
@@ -592,6 +601,15 @@ section .toolsTitle::after {
 .blogPosts {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.postDiv {
+  transition: all 0.3s ease;
+}
+.postDiv:hover {
+  transform: scale(1.1);
+  opacity: 80%;
 }
 
 .blogPosts a {
@@ -645,6 +663,29 @@ section .blogTitle::after {
   content: "Last Posts";
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .imgdiv img {
+    width: 700px;
+    height: 400px;
+  }
+
+  .blogPosts h3 {
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgdiv img {
+    width: 370px;
+    height: 250px;
+  }
+
+  .blogPosts h3 {
+    margin-top: 2em;
+    margin-left: 0.5em;
+  }
+}
+
 /* Contact form section */
 
 .contact .aboutTitle::after {
@@ -652,14 +693,16 @@ section .blogTitle::after {
 }
 
 .contact .contact-content .column {
-  width: calc(50% -30px);
+  /* width: calc(50% -30px); */
   color: white;
+  padding: 3em;
 }
 
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-left: 1em;
 }
 
 .contact .contact-content .left .icons {
@@ -800,7 +843,7 @@ section .blogTitle::after {
 footer {
   padding: 20px 23px;
   color: white;
-  margin-top: 3em;
+  margin-top: 5em;
   font-size: 1.2em;
 }
 
@@ -837,6 +880,24 @@ footer span a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.CvMe {
+  color: white;
+  margin-left: 1em;
+  margin-top: 6em;
+}
+
+.CvMe p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.CvMe span {
+  color: rgb(245, 61, 98);
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 .aboutRow {
   display: flex;
@@ -957,6 +1018,11 @@ footer span a {
 .contactDiv i {
   font-size: 3em;
   color: white;
+  transition: all 0.3s ease;
+}
+
+.contactDiv i:hover {
+  color: rgb(245, 61, 98);
 }
 
 .cvBtn a {
@@ -1072,6 +1138,54 @@ footer span a {
 
 .linkBtn {
   margin: 1em;
+}
+
+/* specific blog post page */
+.sPost {
+  margin: 2em;
+}
+.sPost h1 {
+  color: rgb(245, 61, 98);
+  letter-spacing: 2px;
+  margin: 4em 1em;
+  font-size: 2.5em;
+}
+
+.sPost img {
+  width: 100%;
+}
+
+.recipes p {
+  color: white;
+  margin: 3em 1em;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.recipes h3 {
+  color: rgb(245, 61, 98);
+  margin-left: 1em;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.backToPosts a {
+  display: inline-block;
+  background-color: rgb(245, 61, 98);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid rgb(245, 61, 98);
+  transition: all 0.3s ease;
+  margin-left: 1em;
+}
+
+.backToPosts a:hover {
+  color: rgb(245, 61, 98);
+  background: none;
 }
 
 /* Media Query*/
