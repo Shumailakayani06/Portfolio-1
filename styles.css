@@ -649,7 +649,7 @@ section .toolsTitle::after {
   }
 
   .tools .right li {
-    margin-left: 1em;
+    margin-left: 1.2em;
     padding-right: 2em;
   }
 }
@@ -746,6 +746,7 @@ section .blogTitle::after {
   .blogPosts h3 {
     margin-top: 2em;
     margin-left: 0.5em;
+    font-size: 16px;
   }
 
   .blogPosts {
