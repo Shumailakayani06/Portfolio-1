@@ -258,6 +258,7 @@ section .headInfo {
   min-height: 500px;
   color: white;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .sectionDiv .max-width {
@@ -301,6 +302,11 @@ section .headInfo {
   background: none;
 }
 
+@media screen and (max-width: 768px) {
+  .sectionDiv .headInfo .text-2 {
+    font-size: 40px;
+  }
+}
 /* all similar styling code*/
 
 /* home page about me section */
@@ -443,6 +449,20 @@ section .aboutTitle::after {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about .about-content .left img {
+    margin-top: 3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .about-content .left img {
+    margin-top: 3em;
+    width: 350px;
+    height: 500px;
+  }
+}
+
 /* my projects content on first page*/
 
 .myProjects .aboutTitle::after {
@@ -482,6 +502,13 @@ section .aboutTitle::after {
   font-size: 18px;
   letter-spacing: 1px;
   margin: 2em 0;
+}
+
+@media screen and (max-width: 768px) {
+  .project-img {
+    width: 350px;
+    height: 230px;
+  }
 }
 
 /* Skills section styling */
@@ -537,6 +564,18 @@ section .aboutTitle::after {
 }
 .skills-content .column-left .javascript::before {
   width: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .skills .skills-content .column-left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills .skills-content .column-left {
+    width: 100%;
+  }
 }
 
 /* Tools section */
@@ -596,6 +635,25 @@ section .toolsTitle::after {
 .tools .tools i {
   color: rgb(245, 61, 98);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .toolDiv {
+    max-width: 100%;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toolDiv {
+    flex-wrap: wrap;
+  }
+
+  .tools .right li {
+    margin-left: 1em;
+    padding-right: 2em;
+  }
+}
+
 /* last 3 post desction */
 
 .blogPosts {
@@ -672,6 +730,11 @@ section .blogTitle::after {
   .blogPosts h3 {
     margin-top: 2em;
   }
+
+  .blogPosts {
+    justify-content: left;
+    margin-left: 1em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -683,6 +746,10 @@ section .blogTitle::after {
   .blogPosts h3 {
     margin-top: 2em;
     margin-left: 0.5em;
+  }
+
+  .blogPosts {
+    margin-left: 1em;
   }
 }
 
@@ -838,6 +905,33 @@ section .blogTitle::after {
   background: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact .contact-content {
+    justify-content: left;
+    width: 100%;
+  }
+
+  .contact .max-width {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact .aboutTitle {
+    font-size: 2em;
+  }
+  .contact .aboutTitle::after {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    font-size: 24px;
+    color: rgb(245, 61, 98);
+    padding: 5px;
+    background: #012340;
+    transform: translateX(-50%);
+  }
+}
+
 /* footer section starts here */
 
 footer {
@@ -872,6 +966,18 @@ footer span a {
 
 .footerA a:hover {
   color: rgb(245, 61, 98);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footerA {
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footerA {
+    padding-bottom: 2em;
+  }
 }
 
 /* About page content starts here */
@@ -1048,6 +1154,37 @@ footer span a {
   background: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutRow {
+    width: 80%;
+  }
+
+  .about {
+    justify-content: left;
+  }
+
+  .CvMeDiv p {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactDiv {
+    text-align: center;
+    border: none;
+
+    padding: 1em;
+  }
+
+  .cvImg {
+    text-align: center;
+  }
+
+  .cvImg img {
+    width: 80%;
+  }
+}
+
 /* Project specific page */
 
 .projectSection {
@@ -1138,6 +1275,30 @@ footer span a {
 
 .linkBtn {
   margin: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .projectImgDiv img {
+    width: 350px;
+    margin: 2em 0;
+  }
+  .projectImgDiv {
+    justify-content: left;
+  }
+
+  .rainydays .rainydaysTitle,
+  .csmuseum .csmuseumTitle,
+  .lovegreens .lovegreensTitle {
+    font-size: 25px;
+  }
+
+  .rainydays .rainydaysTitle::after,
+  .csmuseum .csmuseumTitle::after,
+  .lovegreens .lovegreensTitle::after {
+    position: absolute;
+    bottom: -15px;
+    font-size: 20px;
+  }
 }
 
 /* specific blog post page */
