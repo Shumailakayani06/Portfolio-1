@@ -10,6 +10,7 @@
 body {
   font-family: "montserrat";
   background: #012340;
+  overflow-x: hidden;
 }
 
 p {
@@ -171,9 +172,6 @@ p {
     transform: translatex(100%);
     transition: transform 0.5s ease-in;
     opacity: 85%;
-  }
-
-  .nav-active {
     display: none;
   }
 
