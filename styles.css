@@ -230,6 +230,11 @@ p {
 .logoImg {
   height: 100px;
   width: 150px;
+  transition: 0.5s;
+}
+
+.logoImg:hover {
+  color: crimson;
 }
 
 /* man section content */
@@ -243,7 +248,7 @@ section .headInfo {
   margin: auto;
   max-width: 1300px;
 }
-
+/* 
 .imgDiv {
   background: url(/images/f00abafe-ebbe-4fa7-b8ab-cde2ada1a51b-removebg-preview.png);
   width: 30%;
@@ -252,10 +257,12 @@ section .headInfo {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   margin-left: 20%;
   background-size: cover;
-}
+} */
 
 .sectionDiv {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-image: url(/images/Crystal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -265,6 +272,14 @@ section .headInfo {
   color: white;
   flex-wrap: wrap;
   overflow-x: hidden;
+}
+
+.imgDiv {
+  margin-right: 2em;
+}
+
+.imgDiv img {
+  width: 300px;
 }
 
 .sectionDiv .max-width {
@@ -463,13 +478,13 @@ section .aboutTitle::after {
 }
 
 @media screen and (max-width: 1299px) {
-  .imgDiv {
+  /* .imgDiv {
     width: 30%;
     height: 50%;
     text-align: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     margin-left: 20%;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -560,6 +575,10 @@ section .aboutTitle::after {
 
 /* Skills section styling */
 
+.skills .max-width {
+  width: 100%;
+}
+
 .skills .aboutTitle::after {
   content: "what i know";
 }
@@ -568,7 +587,7 @@ section .aboutTitle::after {
   color: white;
 }
 .skills .skills-content .column-left {
-  width: 70%;
+  width: 100%;
 }
 
 .skills .skills-content .column-left .bars {
@@ -666,7 +685,7 @@ section .toolsTitle::after {
 .toolDiv {
   display: flex;
   justify-content: space-around;
-  max-width: 65%;
+  max-width: 100%;
 }
 
 .tools .tools {
