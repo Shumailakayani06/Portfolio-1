@@ -1162,6 +1162,10 @@ footer span a {
   align-items: center;
 }
 
+.cvDiv img {
+  width: 400px;
+}
+
 .contactDiv {
   text-align: center;
   border-top: 2px solid white;
