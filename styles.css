@@ -825,6 +825,14 @@ section .blogTitle::after {
   content: "Get in touch";
 }
 
+.contact .icons {
+  padding-top: 2em;
+}
+
+.contact .contact-conten {
+  align-items: left;
+}
+
 .contact .contact-content .column {
   /* width: calc(50% -30px); */
   color: white;
@@ -845,7 +853,6 @@ section .blogTitle::after {
 .contact .contact-content .row {
   display: flex;
   height: 65px;
-  align-items: center;
 }
 
 .contact .contact-content .row .info {
@@ -858,8 +865,11 @@ section .blogTitle::after {
 }
 
 .contact .contact-content .row i {
-  font-size: 25px;
+  font-size: 30px;
   color: rgb(245, 61, 98);
+}
+.contact .contact-content .row i:hover {
+  color: white;
 }
 
 .contact .contact-content .info .head {
@@ -898,7 +908,7 @@ section .blogTitle::after {
 }
 
 .contact .contact-content {
-  justify-content: space-around;
+  justify-content: left;
 }
 
 .contact .contact-content .right {
