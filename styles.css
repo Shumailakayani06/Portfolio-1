@@ -932,7 +932,7 @@ footer span a {
   font-size: 24px;
   color: rgb(245, 61, 98);
   padding: 5px;
-  background: #012340;
+  background: #494C52;
   transform: translateX(-50%);
 }
 .aboutMe .AboutMeTitle::after {
@@ -1066,7 +1066,8 @@ footer span a {
 
 .rainydays .rainydaysTitle,
 .csmuseum .csmuseumTitle,
-.lovegreens .lovegreensTitle {
+.lovegreens .lovegreensTitle,
+.rainydays .homeCareTitle {
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -1078,7 +1079,8 @@ footer span a {
 
 .rainydays .rainydaysTitle::before,
 .csmuseum .csmuseumTitle::before,
-.lovegreens .lovegreensTitle::before {
+.lovegreens .lovegreensTitle::before,
+.rainydays .homeCareTitle::before  {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -1091,18 +1093,19 @@ footer span a {
 
 .rainydays .rainydaysTitle::after,
 .csmuseum .csmuseumTitle::after,
-.lovegreens .lovegreensTitle::after {
+.lovegreens .lovegreensTitle::after,
+.rainydays .homeCareTitle::after  {
   position: absolute;
   bottom: -15px;
   left: 50%;
   font-size: 24px;
   color: rgb(245, 61, 98);
   padding: 5px;
-  background: #012340;
+  background: #494C52;
   transform: translateX(-50%);
 }
 .rainydays .rainydaysTitle::after {
-  content: "My First Website";
+  content: "Semester Project";
 }
 
 .csmuseum .csmuseumTitle::after {
@@ -1111,6 +1114,10 @@ footer span a {
 
 .lovegreens .lovegreensTitle::after {
   content: "Project Exam";
+}
+
+.rainydays .homeCareTitle::after {
+  content: "Assignment";
 }
 
 /* project content */
